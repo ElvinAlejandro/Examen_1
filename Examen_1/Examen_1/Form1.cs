@@ -29,7 +29,7 @@ namespace Examen_1
             int Tiempo = 12;
             string Mes = "";
 
-            for (int j = 1; j < 12; j++)
+            for (int j = 1; j <= 12; j++)
             {
                 Capital = Capital + Interes;
                 Interes = Capital * i * Tiempo;
@@ -45,40 +45,40 @@ namespace Examen_1
                         Mes = "Febrero";
                         break;
                     case 3:
-                        Mes = "";
+                        Mes = "Marzo";
                         break;
                     case 4:
-                        Mes = "";
+                        Mes = "Abril";
                         break;
                     case 5:
-                        Mes = "";
+                        Mes = "Mayo";
                         break;
                     case 6:
-                        Mes = "";
+                        Mes = "Junio";
                         break;
                     case 7:
-                        Mes = "";
+                        Mes = "Julio";
                         break;
                     case 8:
-                        Mes = "";
+                        Mes = "Agosto";
                         break;
                     case 9:
-                        Mes = "";
+                        Mes = "Septiembre";
                         break;
                     case 10:
-                        Mes = "";
+                        Mes = "Octubre";
                         break;
                     case 11:
-                        Mes = "";
+                        Mes = "Noviembre";
                         break;
                     case 12:
-                        Mes = "";
+                        Mes = "Diciembre";
                         break;
                 }
 
-                        
-                InteresesListBox.Items.Add(Mes+" " + Capital.ToString("N") + " Interés Ganado de "+Mes+": " + Interes);
-                j++;             
+                InteresesListBox.Items.Add(Mes);
+                InteresesListBox.Items.Add("Capital Actual: " + Capital.ToString("N") + " Interés Ganado " + Interes);
+                InteresesListBox.Items.Add("");
 
             }
 

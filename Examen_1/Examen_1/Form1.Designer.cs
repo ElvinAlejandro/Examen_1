@@ -56,7 +56,7 @@ namespace Examen_1
             this.InteresesListBox.FormattingEnabled = true;
             this.InteresesListBox.Location = new System.Drawing.Point(383, 57);
             this.InteresesListBox.Name = "InteresesListBox";
-            this.InteresesListBox.Size = new System.Drawing.Size(398, 238);
+            this.InteresesListBox.Size = new System.Drawing.Size(398, 303);
             this.InteresesListBox.TabIndex = 4;
             // 
             // groupBox2
@@ -129,7 +129,7 @@ namespace Examen_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 343);
+            this.ClientSize = new System.Drawing.Size(800, 405);
             this.Controls.Add(this.CalcularInteresButton);
             this.Controls.Add(this.InteresesListBox);
             this.Controls.Add(this.groupBox2);
