@@ -49,7 +49,7 @@ namespace Examen_1
             this.CalcularInteresButton.TabIndex = 5;
             this.CalcularInteresButton.Text = "Calcular";
             this.CalcularInteresButton.UseVisualStyleBackColor = true;
-            this.CalcularInteresButton.Click += new System.EventHandler(this.CalcularInteresButton_Click_1);
+            this.CalcularInteresButton.Click += new System.EventHandler(this.CalcularInteresButton_Click);
             // 
             // InteresesListBox
             // 
