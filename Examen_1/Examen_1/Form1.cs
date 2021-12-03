@@ -12,71 +12,49 @@ namespace Examen_1
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void LimpiarButton_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            Limpiar();
-        }
-
-        private void Limpiar()
-        {
-            SalarioActualTextBox.Clear();
-            VentasPromTextBox.Clear();
-            AntiguedadTextBox.Clear();
-            NuevoSalarioTextBox.Clear();
 
         }
 
-        public int CalculoEdad(DateTime FechaNac)
+        private void CalcularInteresButton_Click(object sender, EventArgs e)
         {
-            DateTime _FechaNac = FechaNac;
-            DateTime _FechaActual = DateTime.Now;
-
-            int Edad;
-
-            if (_FechaNac.Year >= _FechaActual.Year)
-            {
-                return 0;
-            }
-            else
-            {
-                Edad = _FechaActual.Year - _FechaNac.Year;
-                if (_FechaNac.Month > _FechaActual.Month)
-                {
-                    Edad--;
-                }
-                return Edad;
-            }
-
+            CalcularInteres();
         }
 
+        List<decimal> listaIntereses = new List<decimal>();
 
-        public double NuevoSalario(double SalarioActual, double VentasProm, double Antiguedad)
+        public void CalcularInteres()
         {
+            decimal Interes = 0;
+            decimal i = 0.015M;
+            decimal Capital = 200000M;
+            int Tiempo = 30;
 
+            for (int j = 0; j < 12; j++)
+            {
+                Capital = Capital + Interes;
+                Interes = (Capital * i * Tiempo) / 360;
 
-            if (VentasProm > 10000 && CalculoEdad(Convert.ToDateTime(FechaNacTimePicker.Value)) >= 30 && Antiguedad >= 10)
-            {
-                return SalarioActual * 1.05;
-            }
-            else
-            {
-                return SalarioActual;
+                //listaIntereses.Add(Capital);
+
+                InteresesListBox.Items.Add("Capital Actual: " + Capital..ToString("N") + " Interés Ganado mes de " + Interes);
+                j++;
             }
 
 
+
         }
 
-        private void CalcularSueldoButton_Click(object sender, EventArgs e)
+        private void CalcularInteresButton_Click_1(object sender, EventArgs e)
         {
-            NuevoSalarioTextBox.Text = NuevoSalario(Convert.ToDouble(SalarioActualTextBox.Text),
-                                  Convert.ToDouble(VentasPromTextBox.Text), Convert.ToDouble(AntiguedadTextBox.Text)).ToString();
-        }
 
-      
+        }
     }
 }
