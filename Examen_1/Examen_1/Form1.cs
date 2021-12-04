@@ -19,13 +19,14 @@ namespace Examen_1
         }
   
 
-        List<decimal> listaIntereses = new List<decimal>();
+        List<float> listaIntereses = new List<float>();
+
 
         public void CalcularInteres()
         {
-            decimal Interes = 0;
-            decimal i = 0.015M;
-            decimal Capital = 200000M;
+            float Interes = 0F;
+            float i = 0.015F;
+            float Capital = 200000F;
             int Tiempo = 12;
             string Mes = "";
 
