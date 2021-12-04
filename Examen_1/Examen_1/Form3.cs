@@ -30,11 +30,28 @@ namespace Examen_1
             Nombre = NombreTextBox.Text;
             Apellido = ApellidoTextBox.Text;
 
-            for (int j = 1; j <= 100; j++)
+            for (int i = 1; i <= 100; i++)
             {
-               
-                MostrarListBox.Items.Add(Nombre);
-                MostrarListBox.Items.Add(Apellido);
+               if(i % 3 == 0 && i % 5 == 0)
+                {
+                    MostrarListBox.Items.Add(i+"  "+Nombre+" "+Apellido);
+                }
+
+                else if (i % 3 == 0)
+                {
+                    MostrarListBox.Items.Add(i + "  " + Nombre);
+                }
+
+                else if(i % 5 == 0)
+                    {
+                        MostrarListBox.Items.Add(i + "  " + Apellido);
+                    }
+
+                else
+                {
+                    MostrarListBox.Items.Add(i);
+                }
+
 
             }
 
