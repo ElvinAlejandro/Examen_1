@@ -66,7 +66,7 @@ namespace Examen_1
         {
             ProductosListBox.Items.Add("Subtotal:  " + Total);
             ProductosListBox.Items.Add("Descuento: " + Descuento);
-            ProductosListBox.Items.Add("Total:     " + TotalPagar);
+            ProductosListBox.Items.Add("Total:     " + (Total-Descuento));
 
          }
 
