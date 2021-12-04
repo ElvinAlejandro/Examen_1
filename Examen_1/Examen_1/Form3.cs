@@ -19,7 +19,7 @@ namespace Examen_1
         }
 
 
-        List<int> MostrarNumeros = new List<int>();
+        List<int> ListaMostrar = new List<int>();
 
         public void MostrarNumeros()
         {
@@ -32,13 +32,9 @@ namespace Examen_1
 
             for (int j = 1; j <= 100; j++)
             {
-
-
-                     
-
+               
                 MostrarListBox.Items.Add(Nombre);
                 MostrarListBox.Items.Add(Apellido);
-
 
             }
 
