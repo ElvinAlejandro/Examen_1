@@ -70,6 +70,7 @@ namespace Examen_1
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(155, 20);
             this.NombreTextBox.TabIndex = 3;
+            this.NombreTextBox.Text = "ELVIN";
             // 
             // ApellidoTextBox
             // 
@@ -77,6 +78,7 @@ namespace Examen_1
             this.ApellidoTextBox.Name = "ApellidoTextBox";
             this.ApellidoTextBox.Size = new System.Drawing.Size(155, 20);
             this.ApellidoTextBox.TabIndex = 5;
+            this.ApellidoTextBox.Text = "HERNANDEZ";
             // 
             // label2
             // 

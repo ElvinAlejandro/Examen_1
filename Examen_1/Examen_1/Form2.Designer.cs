@@ -32,11 +32,9 @@ namespace Examen_1
             this.CalcularTotalButton = new System.Windows.Forms.Button();
             this.ProductosListBox = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.PrecioTextBox = new System.Windows.Forms.TextBox();
             this.ProductoTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.AgregarProductoButton = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
@@ -44,9 +42,9 @@ namespace Examen_1
             // 
             // CalcularTotalButton
             // 
-            this.CalcularTotalButton.Location = new System.Drawing.Point(242, 347);
+            this.CalcularTotalButton.Location = new System.Drawing.Point(242, 304);
             this.CalcularTotalButton.Name = "CalcularTotalButton";
-            this.CalcularTotalButton.Size = new System.Drawing.Size(124, 37);
+            this.CalcularTotalButton.Size = new System.Drawing.Size(124, 80);
             this.CalcularTotalButton.TabIndex = 8;
             this.CalcularTotalButton.Text = "Calcular";
             this.CalcularTotalButton.UseVisualStyleBackColor = true;
@@ -62,27 +60,16 @@ namespace Examen_1
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.PrecioTextBox);
             this.groupBox2.Controls.Add(this.ProductoTextBox);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.Label8);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(14, 66);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(352, 205);
+            this.groupBox2.Size = new System.Drawing.Size(352, 141);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ingresar Datos";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(102, 139);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 13);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "L. 200,000.00";
             // 
             // PrecioTextBox
             // 
@@ -107,16 +94,6 @@ namespace Examen_1
             this.label7.TabIndex = 1;
             this.label7.Text = "Precio";
             // 
-            // Label8
-            // 
-            this.Label8.AutoSize = true;
-            this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.Location = new System.Drawing.Point(6, 137);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(71, 16);
-            this.Label8.TabIndex = 2;
-            this.Label8.Text = "Depósito";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -128,7 +105,7 @@ namespace Examen_1
             // 
             // AgregarProductoButton
             // 
-            this.AgregarProductoButton.Location = new System.Drawing.Point(242, 277);
+            this.AgregarProductoButton.Location = new System.Drawing.Point(242, 225);
             this.AgregarProductoButton.Name = "AgregarProductoButton";
             this.AgregarProductoButton.Size = new System.Drawing.Size(124, 37);
             this.AgregarProductoButton.TabIndex = 9;
@@ -158,11 +135,9 @@ namespace Examen_1
         private System.Windows.Forms.Button CalcularTotalButton;
         private System.Windows.Forms.ListBox ProductosListBox;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox PrecioTextBox;
         private System.Windows.Forms.TextBox ProductoTextBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label Label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button AgregarProductoButton;
     }
