@@ -47,20 +47,31 @@ namespace Examen_1
         double Descuento = 0;
         double Subtotal = 0;
 
-        public void CalcularTotal()
+        public string TotalPagar { get; private set; }
+
+        public async Task<double> CalcularTotalAsync()
         {
             Subtotal = Total;
             Descuento = Total * 0.15;
-            Total = Total - Descuento;
 
-            ProductosListBox.Items.Add("Subtotal:  "+Subtotal);
-            ProductosListBox.Items.Add("Descuento: "+Descuento);
-            ProductosListBox.Items.Add("Total:     "+Total);
+            double TotalPagar = await Task.Run(() =>
+            { 
+                  return Total - Descuento;
+                });
+            return TotalPagar;
         }
+
+        public void Mostrar()
+        {
+            ProductosListBox.Items.Add("Subtotal:  " + Subtotal);
+            ProductosListBox.Items.Add("Descuento: " + Descuento);
+            ProductosListBox.Items.Add("Total:     " + TotalPagar);
+         }
 
         private void CalcularTotalButton_Click(object sender, EventArgs e)
         {
-            CalcularTotal();
+            Task<double> task = CalcularTotalAsync();
+            Mostrar();
         }
     }
 }
