@@ -20,7 +20,7 @@ namespace Examen_1
 
 
         List<decimal> listaProductos = new List<decimal>();
-        double Total = 0;
+
   
         public void AgregarProducto()
         {       
@@ -45,13 +45,14 @@ namespace Examen_1
         }
 
         double Descuento = 0;
-        double Subtotal = 0;
+ 
+        double Total = 0;
 
         public string TotalPagar { get; private set; }
 
         public async Task<double> CalcularTotalAsync()
         {
-            Subtotal = Total;
+            
             Descuento = Total * 0.15;
 
             double TotalPagar = await Task.Run(() =>
@@ -63,9 +64,10 @@ namespace Examen_1
 
         public void Mostrar()
         {
-            ProductosListBox.Items.Add("Subtotal:  " + Subtotal);
+            ProductosListBox.Items.Add("Subtotal:  " + Total);
             ProductosListBox.Items.Add("Descuento: " + Descuento);
             ProductosListBox.Items.Add("Total:     " + TotalPagar);
+
          }
 
         private void CalcularTotalButton_Click(object sender, EventArgs e)

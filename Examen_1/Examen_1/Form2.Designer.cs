@@ -66,7 +66,7 @@ namespace Examen_1
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(14, 66);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(352, 141);
+            this.groupBox2.Size = new System.Drawing.Size(352, 145);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ingresar Datos";
@@ -105,7 +105,7 @@ namespace Examen_1
             // 
             // AgregarProductoButton
             // 
-            this.AgregarProductoButton.Location = new System.Drawing.Point(242, 225);
+            this.AgregarProductoButton.Location = new System.Drawing.Point(242, 217);
             this.AgregarProductoButton.Name = "AgregarProductoButton";
             this.AgregarProductoButton.Size = new System.Drawing.Size(124, 37);
             this.AgregarProductoButton.TabIndex = 9;
